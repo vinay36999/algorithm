@@ -6,7 +6,8 @@ public class Anagrams {
 	public static void main(String[] args){
 		StringBuilder word = new StringBuilder("abcdefghijklmno");
 		StringBuilder anotherWord = new StringBuilder("onmlkjihgfedcba");
-
+		//
+		int k;
 		//int length = anotherWord.length();
 		if(word.toString().length()==anotherWord.length()){
 							for(int i=0;anotherWord.length()!=0;){
