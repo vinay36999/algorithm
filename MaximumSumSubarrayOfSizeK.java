@@ -1,11 +1,10 @@
 class MaximumSumSubarrayOfSizeK {
     public static void main(String[] args) {
-        System.out.println(findMaxSumSubArray(3, new int[] {2, 1, 5, 1, 3, 2}));
-        System.out.println(findMaxSumSubArray(2, new int[] {2, 3, 4, 1, 5}));
+        System.out.println(findMaxSumSubArray(3, new int[] {2, 1, 5, 1, 3, 2}));//expected 9
+        System.out.println(findMaxSumSubArray(2, new int[] {2, 3, 4, 1, 5}));//expected 7
     }
 
     public static int findMaxSumSubArray(int k, int[] arr) {
-        // TODO: Write your code here
         int maximumSubArraySum=0;
         int prevWindowSum=0;
         for(int start = 0; start < arr.length-k+1 ; start++){
