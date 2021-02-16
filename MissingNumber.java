@@ -10,7 +10,7 @@ public class MissingNumber {
 
     private static int findTheMissingNumber(int[] ints) {
         // sigma(n)-sum(array)
-        return ints.length*(ints.length+1)/2 - IntStream.of(ints).sum();
+        return ints.length*(ints.length+1)/2 - IntStream.of(ints).sum(); //time Complexity : O(n)
 
         //Other alternative approaches
         //brute force - iterate through array to find each number start from 0 to n
